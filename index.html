@@ -106,7 +106,7 @@
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
-										<form method="post" action="mailto:sanjana_desai@live.ca">
+										<form method="post" action="assets/php/contact-form-handler.php">
 											<div class="field half">
 												<label for="name">Name</label>
 												<input type="text" name="name" id="name" />
@@ -123,6 +123,14 @@
 												<li><input type="submit" value="Send Message" class="button special" /></li>
 											</ul>
 										</form>
+										<script language="JavaScript">
+												var frmvalidator  = new Validator("contactform");
+												frmvalidator.addValidation("name","req","Please provide your name");
+												frmvalidator.addValidation("email","req","Please provide your email");
+												frmvalidator.addValidation("email","email",
+													"Please enter a valid email address");
+										</script>
+
 									</div>
 									<div class="span-1-5">
 										<ul class="contact-icons color1">
