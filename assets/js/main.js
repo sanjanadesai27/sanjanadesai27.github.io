@@ -45,8 +45,9 @@
 			// Dragging.
 				dragging: {
 
-					// If true, enables scrolling by dragging the main wrapper with the mouse.
-						enabled: true,
+					// If true, enables scrolling by dragging the main wrapper with the mouse. 
+					//Changed by Sanjana on  Dec.6.17
+						enabled: false,
 
 					// Sets the momentum factor. Must be a value between 0 and 1 (lower = less momentum, higher = more momentum, 0 = disable momentum scrolling).
 						momentum: 0.875,
@@ -691,13 +692,13 @@
 
 						// Clear visible, loaded.
 							$modal
-								.removeClass('loaded')
+								.removeClass('loaded');
 
 						// Delay.
 							setTimeout(function() {
 
 								$modal
-									.removeClass('visible')
+									.removeClass('visible');
 
 								// Pause scroll zone.
 									$wrapper.triggerHandler('---pauseScrollZone');
